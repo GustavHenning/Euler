@@ -18,14 +18,7 @@ public class Three {
 
 	private static long findPrimes(long x) {
 
-		int i = 1;
-		while(!isPrime(i) && x % i != 0){
-			System.out.println(i);
-			i++;
-		}
-		x = x / i;
-		primes.add(i);
-		
+		int i = 1;		
 		while(!isPrime(x)) {
 			if(x % i == 0 && isPrime(i) && !primes.contains(i)) {
 				x = x / i;
@@ -50,11 +43,11 @@ public class Three {
 		long j = 2;
 		while(y>j) {
 			if(y % j == 0){
-				System.out.println(j);
 				return false;
 			}
 			j++;
 		}
+		System.out.println(j);
 		return true;
 	}
 }
