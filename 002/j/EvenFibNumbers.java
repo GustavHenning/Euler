@@ -1,6 +1,6 @@
 package j;
 
-public class Two {
+public class EvenFibNumbers {
 	static int[] pastfib = {0,1};
 
 	public static void main(String[] args){

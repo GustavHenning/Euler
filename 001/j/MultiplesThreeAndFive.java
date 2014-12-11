@@ -1,6 +1,6 @@
 package j;
 
-public class One {
+public class MultiplesThreeAndFive {
 
 public static void main(String[] args) {
 	long ans = 0;
