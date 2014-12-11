@@ -3,8 +3,8 @@ package j;
 import java.util.ArrayList;
 
 public class LargestPrimeFactor {
-	
-	public LargestPrimeFactor(){
+
+	public static void main(String[] args){
 		ArrayList<Long> primes = new ArrayList<Long>();
 		long f = 600851475143L;
 		long i = 0;
@@ -27,15 +27,12 @@ public class LargestPrimeFactor {
 		
 	}
 	
-	public long factorOf(long p){
+	public static long factorOf(long p){
 		for(long i = 2; i < p; i++){
 			if(p % i == 0){
 				return i;
 			}
 		}
 		return p;
-	}
-	public static void main(String[] args){
-		new LargestPrimeFactor();
 	}
 }
